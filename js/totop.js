@@ -21,10 +21,14 @@
     });
     // Scroll to top animation on click
     $(scrollElem).click(function(){
-        $('#container').animate({scrollTop:0,height:800}, scrollSpeed); return false;
-        $(scrollElem).css("background-position-x","-189px")
+        $(scrollElem).css("background-position-x","-189px");
+        $('#container').animate({scrollTop:0,height:"1000px"}, scrollSpeed);
     });
-    $(scrollElem).on("mouseover",function(){
-        $(scrollElem).css("background-position-x","-97px")
-    })
+    $(scrollElem).hover(
+        function(){
+            $(scrollElem).css("background-position-x","-97px");
+        },function(){
+            $(scrollElem).css("background-position-x","-5px");
+        }
+    )
 })(jQuery);
