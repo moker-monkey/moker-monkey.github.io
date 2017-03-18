@@ -1,1 +1,1 @@
-[]
+[{"title":"","date":"2017-03-18T13:47:54.434Z","path":"2017/03/18/《精通Javascript》学习笔记/","text":"学习《精通Javascript》笔记 《精通 Javascript 》作者是：【美国】 John Resig ,他是著名框架jQuery的作者,因此选择该作者的著作来拜读,可以对jQuery框架有更深刻的认识,也对JavaScript 会有更深刻的认识,这就是选择这本书的原因,我已经迫不及待了,让我们开始吧! 第一章:面向对象的 JavaScript ​ 第一章对 JavaScript 中较为经典的部分做了简单点评,该书的主要知识点将围绕以下5点进行展开: 面向对象的特性; 操作DOM; 注册事件(event) Javascript 与 CSS 的交互 Ajax的实现原理 ​","tags":[]}]
