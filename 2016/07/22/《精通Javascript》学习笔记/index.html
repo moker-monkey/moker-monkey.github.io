@@ -24,10 +24,8 @@
 
 第一部分:面向对象的 JavaScript
 ​    第一章,对 JavaSc">
-<meta property="og:image" content="http://yoursite.com/C:\Users\Auser\Desktop\John Resig.jpg">
-<meta property="og:image" content="http://yoursite.com/C:\Users\Auser\Desktop\创建引用的过程.png">
-<meta property="og:image" content="http://yoursite.com/C:\Users\Auser\Desktop\不是这样的.png">
-<meta property="og:updated_time" content="2017-03-22T08:21:18.888Z">
+<meta property="og:image" content="http://yoursite.com/.\img\John Resig.jpg">
+<meta property="og:updated_time" content="2017-03-22T08:33:34.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习《精通Javascript》笔记之面向对象的特性">
 <meta name="twitter:description" content="学习《精通Javascript》笔记
@@ -36,7 +34,7 @@
 
 第一部分:面向对象的 JavaScript
 ​    第一章,对 JavaSc">
-<meta name="twitter:image" content="http://yoursite.com/C:\Users\Auser\Desktop\John Resig.jpg">
+<meta name="twitter:image" content="http://yoursite.com/.\img\John Resig.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Moker的个人空间" type="application/atom+xml">
   
@@ -198,7 +196,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="学习《精通Javascript》笔记"><a href="#学习《精通Javascript》笔记" class="headerlink" title="学习《精通Javascript》笔记"></a>学习《精通Javascript》笔记</h1><p><img src="C:\Users\Auser\Desktop\John Resig.jpg" alt="John Resig"></p>
+        <h1 id="学习《精通Javascript》笔记"><a href="#学习《精通Javascript》笔记" class="headerlink" title="学习《精通Javascript》笔记"></a>学习《精通Javascript》笔记</h1><p><img src=".\img\John Resig.jpg" alt="John Resig"></p>
 <blockquote>
 <p>  《精通 Javascript 》作者是：【美国】 <em>John Resig</em>  ,他是著名框架jQuery的作者,因此选择该作者的著作来拜读,可以对jQuery框架有更深刻的认识,也对JavaScript 会有更深刻的认识,这就是选择这本书的原因,我已经迫不及待了,让我们开始吧!</p>
 </blockquote>
@@ -232,13 +230,11 @@
 <h3 id="一-引用"><a href="#一-引用" class="headerlink" title="一,引用:"></a>一,引用:</h3><pre><code>&gt;概念:引用是面向对象实现的基础,而非一般的赋值的浅拷贝,你拿到的不是副本!
 </code></pre><p>例如:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var obj = new Object()	//实例化一个对象</div><div class="line">obj.name = &quot;小铭&quot;;	  //实例化一个对象</div><div class="line">var objRef = obj;		//创建一个引用</div><div class="line">console.log(objRef.name) //结果是小铭</div><div class="line">objRef.name = &quot;大铭&quot;;</div><div class="line">console.log(obj.name) //结果是大铭</div></pre></td></tr></table></figure>
-<p><img src="C:\Users\Auser\Desktop\创建引用的过程.png" alt="创建引用的过程"></p>
 <p>那么既然地址是相同的,如果我更改obj的地址指向时,objRef也应该修改才对(接着上一个代码)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">obj = new object(); //将obj从新赋一个新对象</div><div class="line">console.log(objRef.name) // 大铭</div><div class="line">console.log(obj.name) // undefined</div></pre></td></tr></table></figure>
 <p>然而实际情况却是objRef依然指向的是旧的对象</p>
-<p>这就意味着,在 Javascript 中的 new 操作,实际上是创建了一个<strong>新的对象</strong> ,而非改变原有地址,而原地址由于有引用,也没有被垃圾回收机制回收;</p>
-<p>而不是浅拷贝<img src="C:\Users\Auser\Desktop\不是这样的.png" alt="不是这样的"></p>
-<p>  <strong>在 Javascript 中的=号都是”引用”符号而非 赋值!</strong></p>
+<p>这就意味着,在 Javascript 中的 new 操作,实际上是创建了一个<strong>新的对象</strong> ,而非改变原有地址,而原地址<strong>由于有引用</strong>,也<strong>没有</strong>被垃圾回收机制回收;</p>
+<p>  <strong>在 Javascript 中的=号都是”引用”符号而非赋值!</strong></p>
 <p>所以你常见的:<strong>字符串</strong>,<strong>数字</strong>,<strong>数组</strong>,<strong>布尔值</strong>,<strong>function</strong>,<strong>对象</strong>的=号其实都是<strong>引用</strong> ;</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str = &quot;hellow world&quot;;</div><div class="line">var strRef = str;     //这是引用</div><div class="line">var num = 100 ;</div><div class="line">var numRef = num;    //这是引用</div></pre></td></tr></table></figure>
 <p>当你看到这里,你会疑惑,那为什么对象中的引用,在对象进行修改时引用中的值也会进行修改,而上面几行代码在改变 str 之后 strRef 并没有做出相应的改变啊?他们难道不是指向同一地址的吗?</p>
@@ -268,7 +264,7 @@
 <p>JavaScript主要是从这9个对象（以及字符串，数字和布尔值 - 原始值 - 它们的相等性基于值不是参考）构造的。</p>
 <p>如果你直接调用构造函数（Number（），String（）和Boolean（）），就返回一个复杂的对象。如果你只是在代码中表示一个数字，字符串或布尔值（原始值，如5，“foo”和true），那么构造函数将返回一个原始值，而不是一个复杂的对象值。</p>
 <p><strong>“window”/head对象</strong></p>
-<p>而所有 var 声明出来的变量都是window的一个属性,我们可以这样论证</p>
+<p>而所有 var 声明出来的变量都是 window 的一个属性,我们可以这样论证</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var a= 2;</div><div class="line">for(x in window)&#123;</div><div class="line">	if(window[x] === a)&#123;</div><div class="line">	console.log(x)       //a</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>如果你想看的更详细也可以</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(this);</div></pre></td></tr></table></figure>
@@ -556,6 +552,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/03/22/移动应用开发/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/05/29/CSS3动画/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS3动画</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -654,6 +669,14 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
