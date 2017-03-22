@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>CSS/CSS3常用样式小结 | Moker的个人空间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CSS/CSS3常用样式小结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS/CSS3常用样式小结">
+<meta property="og:url" content="http://yoursite.com/2015/08/28/CSS&CSS3常用样式小结/index.html">
+<meta property="og:site_name" content="Moker的个人空间">
+<meta property="og:description" content="CSS/CSS3常用样式小结">
+<meta property="og:image" content="http://img.25pp.com/uploadfile/app/icon/20151216/1450243647920339.jpg">
+<meta property="og:updated_time" content="2017-03-22T11:18:01.706Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS/CSS3常用样式小结">
+<meta name="twitter:description" content="CSS/CSS3常用样式小结">
+<meta name="twitter:image" content="http://img.25pp.com/uploadfile/app/icon/20151216/1450243647920339.jpg">
+  
+  
+    <link rel="icon" href="/img/logo.png">
+  
+  <link rel="stylesheet" type="text/css" href="/./main.2d7529.css">
+  <style type="text/css">
+  
+    #container.show {
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+    }
+  </style>
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      
+<div class="overlay" style="background: #4d4d4d"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="/img/myHeader.png" class="js-avatar">
+		</a>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Moker</a></h1>
+		</hgroup>
+		
+		<p class="header-subtitle">我从山中来,带着兰花草,云往山涧过,蓬门待客来</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/myfeeling/">随笔</a></li>
+	        
+				<li><a href="/tags/mycode/">代码仓库</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+    		
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="weixin" target="_blank" href="/xcm19911121" title="weixin"><i class="icon-weixin"></i></a>
+		        
+					<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/3fb5d597748b" title="jianshu"><i class="icon-jianshu"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:lkjhuy@sina.com" title="mail"><i class="icon-mail"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      
+<nav id="mobile-nav">
+  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+	<div class="btnctn js-mobile-btnctn">
+  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/img/myHeader.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author js-header-author">Moker</h1>
+			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>我从山中来,带着兰花草,云往山涧过,蓬门待客来<i class="icon icon-quo-right"></i></p>
+			
+			
+			
+				
+			
+				
+			
+				
+			
+			
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="weixin" target="_blank" href="/xcm19911121" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/3fb5d597748b" title="jianshu"><i class="icon-jianshu"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:lkjhuy@sina.com" title="mail"><i class="icon-mail"></i></a>
+			        
+				</div>
+			</nav>
+
+			<nav class="header-menu js-header-menu">
+				<ul style="width: 70%">
+				
+				
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/myfeeling/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/mycode/">代码仓库</a></li>
+		        
+				</ul>
+			</nav>
+		</header>				
+	</div>
+	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-CSS&amp;CSS3常用样式小结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS/CSS3常用样式小结
+    </h1>
+  
+
+        
+        <a href="/2015/08/28/CSS&CSS3常用样式小结/" class="archive-article-date">
+  	<time datetime="2015-08-28T12:00:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS-CSS3常用样式小结"><a href="#CSS-CSS3常用样式小结" class="headerlink" title="CSS/CSS3常用样式小结"></a>CSS/CSS3常用样式小结</h1><p><img src="http://img.25pp.com/uploadfile/app/icon/20151216/1450243647920339.jpg" alt="CSS"></p>
+<a id="more"></a>
+<h3 id="1-文本显示问题"><a href="#1-文本显示问题" class="headerlink" title="1.文本显示问题"></a>1.文本显示问题</h3><p><strong>强制文本单行显示：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">white-space:nowrap;</div></pre></td></tr></table></figure>
+<p><strong>多行文本最后省略号</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">display: -webkit-box; -webkit-line-clamp:2; overflow: hidden; -webkit-box-orient: vertical; text-overflow: ellipsis;</div></pre></td></tr></table></figure>
+<h3 id="2-设置溢出文本显示为省略标记："><a href="#2-设置溢出文本显示为省略标记：" class="headerlink" title="2.设置溢出文本显示为省略标记："></a>2.设置溢出文本显示为省略标记：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">text-overflow:ellipsis;</div></pre></td></tr></table></figure>
+<p>(注：text-overflow:clip | ellipsis | ellipsis-word;（css3新增加的）<br>其中clip表示直接裁切溢出的文本；<br>值ellipsis表示文本溢出时，显示省略标记(…)，省略标记代替最后一个字符；<br>值ellipsis-word表示文本溢出时，也是显示省略标记(…),不同的是，省略标记代替的是最后一个词)<br><em>例：想让一段文字在固定宽度在一行显示，最后一个字符为省略标记(…)，css样式如下</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">white-space:nowrap;text-overflow:ellipsis;overflow:hidden;</div></pre></td></tr></table></figure>
+<h3 id="3-a标签的中的图片有虚线框的问题例如一段代码："><a href="#3-a标签的中的图片有虚线框的问题例如一段代码：" class="headerlink" title="3.a标签的中的图片有虚线框的问题例如一段代码："></a>3.a标签的中的图片有虚线框的问题例如一段代码：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;img src=&quot;images/suba.gif&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>当点击a标签里面的图片的时候，有虚线框，IE中图片还有边框，如何解决？解决办法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a&#123;outline:none;&#125;//主要是针对火狐等浏览器，但IE不行</div><div class="line">img&#123;border:0;&#125;</div><div class="line">a:active&#123;noOutline:expression(this.onFocus=this.blur());&#125;//解决IE6，IE7中的虚线框。</div></pre></td></tr></table></figure>
+<p>对于a标签来说，一般简单的解决办法是：在a标签里加入js控制，当a标签被聚焦时，强制取消焦点，这时候a标签自然不会有虚线框。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;#&quot;onfocus=&quot;this.blur();&quot;&gt;测试&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>但是当连接太多的时候，一个一个的加这段代码不实用</p>
+<h3 id="4-html中两张图横向回车导致间隙-怎么才能去除成为无间隙？"><a href="#4-html中两张图横向回车导致间隙-怎么才能去除成为无间隙？" class="headerlink" title="4.html中两张图横向回车导致间隙,怎么才能去除成为无间隙？"></a>4.html中两张图横向回车导致间隙,怎么才能去除成为无间隙？</h3><p>例如：div 宽300px ; img 宽100px; border:0px;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&lt;img /&gt;&lt;img /&gt;&lt;img /&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>//上面情况刚好显示三张图</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">    &lt;img /&gt;</div><div class="line">    &lt;img /&gt;</div><div class="line">    &lt;img /&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>这种情况就无法在横向显示三张图，因为回车导致两图间有间隙。解决办法就是让图片浮动。</p>
+<h3 id="5-css-ie6、ie7中overflow-hidden无效解决办法"><a href="#5-css-ie6、ie7中overflow-hidden无效解决办法" class="headerlink" title="5.css ie6、ie7中overflow:hidden无效解决办法"></a>5.css ie6、ie7中overflow:hidden无效解决办法</h3><p>产生原因：<br>当父元素的直接子元素或者下级子元素的样式拥有<code>position:relative</code>属性时，父元素的overflow:hidden 属性就会失效。<br>解决办法：<br>我们在IE 6、7 内发现子元素会超出父元素设定的高度，即使父元素设置了overflow:hidden。<br>解决这个bug很简单，在父元素中使用 <code>position:relative</code>; 即可解决该bug</p>
+<h3 id="6-表格语法"><a href="#6-表格语法" class="headerlink" title="6.表格语法"></a>6.表格语法</h3><p><code>...</code>表格位置,置左<br><code>...</code>表格位置,置中<br><code>...</code>背景图片的URL=就是路径网址<br><code>...</code>设定表格边框大小(使用数字)<br><code>...</code>设定表格的背景颜色<br><code>...</code>设定表格边框的颜色<br><code>...</code>设定表格暗边框的颜色<br><code>...</code>设定表格亮边框的颜色<br><code>...</code>指定内容与格线之间的间距(使用数字)<br><code>...</code>指定格线与格线之间的距离(使用数字)<br><code>...</code>指定表格的栏数<br><code>...</code>设定表格外框线的显示方式<br><code>...</code>指定表格的宽度大小(使用数字)<br><code>...</code>指定表格的高度大小(使用数字)<br>…指定储存格合并栏的栏数(使用数字)<br>…指定储存格合并列的列数(使用数字)</p>
+<h3 id="7-CSS-text-transform"><a href="#7-CSS-text-transform" class="headerlink" title="7.CSS text-transform"></a>7.CSS text-transform</h3><p>text-transform 属性控制文本的大小写。</p>
+<p>none 默认。定义带有小写字母和大写字母的标准的文本。<br>capitalize 文本中的每个单词以大写字母开头。<br>uppercase 定义仅有大写字母。<br>lowercase 定义无大写字母，仅有小写字母。<br>inherit 规定应该从父元素继承 text-transform 属性的值。</p>
+<h3 id="8-letter-spacing"><a href="#8-letter-spacing" class="headerlink" title="8. letter-spacing"></a>8. letter-spacing</h3><p>letter-spacing 属性增加或减少字符间的空白（字符间距）。<br>例如： <code>letter-spacing: 2px;</code></p>
+<h3 id="9-textarea去掉右侧滚动条，去掉右下角拖拽"><a href="#9-textarea去掉右侧滚动条，去掉右下角拖拽" class="headerlink" title="9.textarea去掉右侧滚动条，去掉右下角拖拽"></a>9.textarea去掉右侧滚动条，去掉右下角拖拽</h3><p>代码： <textarea style="overflow:hidden; resize:none; "> </textarea></p>
+<h3 id="10-css中透明度兼容代码"><a href="#10-css中透明度兼容代码" class="headerlink" title="10.css中透明度兼容代码"></a>10.css中透明度兼容代码</h3><p><code>filter: alpha(opacity=80);opacity:0.8;</code></p>
+<h3 id="11-根据input的type来控制css样式"><a href="#11-根据input的type来控制css样式" class="headerlink" title="11.根据input的type来控制css样式"></a>11.根据input的type来控制css样式</h3><p>a.用css中的type选择器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">input[type=&quot;text&quot;]&#123; background-color:#FFC;&#125;</div></pre></td></tr></table></figure>
+<p>b.用css的expression判断表达式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">input&#123; background-color:expression(this.type==&quot;text&quot;?&apos;#FFC&apos;:&apos;&apos;);&#125;</div></pre></td></tr></table></figure>
+<p>c.用javascript脚本实现(觉得没必要，省略…)</p>
+<h3 id="12：text-stroke"><a href="#12：text-stroke" class="headerlink" title="12：text-stroke"></a>12：text-stroke</h3><p>[ text-stroke-width ]：设置或检索对象中的文字的描边厚度 [ text-stroke-color ]：设置或检索对象中的文字的描边颜色<br>text-stroke(文本描边)和text-fill-color(文本填充色)注意点：<br><code>目前这两个属性只有webkit内核的Safari和Chrome支持</code>，例如： -webkit-text-stroke: 3.3px #2A75BF;<br>text-fill-color：颜色值，和color属性差不多都是文字的样式；<br>同时使用text-fill-color和color属性，text-fill-color将覆盖color属性的颜色值；<br>text-fill-color可以使用透明值，即：text-fill-color：transparent</p>
+<h3 id="13：text-shadow"><a href="#13：text-shadow" class="headerlink" title="13：text-shadow"></a>13：text-shadow</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">text-shadow:0px 0px 0px #333333;</div></pre></td></tr></table></figure>
+<p>属性值依次：水平方向位移（支持负值）、垂直方向位移（支持负值）、模糊半径、阴影颜色<br>text-shadow对同一个text，可设置多个阴影，与box-shadow类似，使用逗号”,”分割，前一个设置效果在后一个设置效果之上。<br>box-shadow 参考：<a href="http://www.cnblogs.com/lhb25/archive/2013/02/20/css3-box-shadow.html" target="_blank" rel="external">http://www.cnblogs.com/lhb25/…</a></p>
+<h3 id="14-css3设置字体"><a href="#14-css3设置字体" class="headerlink" title="14.css3设置字体"></a>14.css3设置字体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt; </div><div class="line">@font-face</div><div class="line">&#123;</div><div class="line">font-family: myFirstFont;</div><div class="line">src: url(&apos;Sansation_Light.ttf&apos;),</div><div class="line">    url(&apos;Sansation_Light.eot&apos;); /* IE9+ */</div><div class="line">&#125;</div><div class="line">div</div><div class="line">&#123;</div><div class="line">font-family:myFirstFont;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<h3 id="15-css强制性换行"><a href="#15-css强制性换行" class="headerlink" title="15. css强制性换行"></a>15. css强制性换行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">word-break:break-all; /*支持IE，chrome，FF不支持*/</div><div class="line">word-wrap:break-word;/*支持IE，chrome，FF*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="16-CSS-first-child-选择器-last-child选择器-nth-child-IE7-8无效，不识别"><a href="#16-CSS-first-child-选择器-last-child选择器-nth-child-IE7-8无效，不识别" class="headerlink" title="16.CSS :first-child 选择器,:last-child选择器,nth-child(IE7,8无效，不识别)"></a>16.CSS :first-child 选择器,:last-child选择器,nth-child(IE7,8无效，不识别)</h3><p>:nth-child(2)选取第几个标签，“2可以是你想要的数字”<br>:nth-child(2n)选取偶数标签，2n也可以是even<br>:nth-child(2n-1)选取奇数标签，2n-1可以是odd<br>:nth-child(3n+1)自定义选取标签，3n+1表示“隔二取一”</p>
+<h3 id="17-css3实现背景颜色渐变"><a href="#17-css3实现背景颜色渐变" class="headerlink" title="17. css3实现背景颜色渐变"></a>17. css3实现背景颜色渐变</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">background:-webkit-linear-gradient(top,#FFF,#cb1919);</div><div class="line">background:-o-linear-gradient(top,#FFF,#cb1919);</div><div class="line">background:-ms-linear-gradient(top,#FFF,#cb1919);</div><div class="line">background:-moz-linear-gradient(top,#FFF,#cb1919);</div><div class="line">background:linear-gradient(top,#FFF,#cb1919);</div></pre></td></tr></table></figure>
+<p>第一个参数：设置渐变的起始位置<br>第二个参数：设置起始位置的颜色<br>第三个参数：设置终止位置的颜色</p>
+<p>IE 浏览器<br>IE浏览器实现渐变只能使用IE自己的滤镜去实现<code>filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=＃00ffff,endColorstr=＃9fffff,grandientType=1);</code><br>第一个参数：渐变起始位置的颜色<br>第二个参数：渐变终止位置的颜色<br>第三个参数：渐变的类型<br>0 代表竖向渐变 1 代表横向渐变</p>
+<h3 id="18-css3的RGB颜色和HSL颜色，-IE8不识别rgba写法"><a href="#18-css3的RGB颜色和HSL颜色，-IE8不识别rgba写法" class="headerlink" title="18.css3的RGB颜色和HSL颜色， IE8不识别rgba写法"></a>18.css3的RGB颜色和HSL颜色， IE8不识别rgba写法</h3><p>其中RGB颜色的原理是通过定义不同的红绿蓝色值来组成一个颜色。color:rgb(254,2,8);<br>其中HSL是通过色相、饱和度、亮度模式来申明颜色的。color:hsl(359,99%,40%);<br>如果需要设置透明背景 则可以用到他们：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">background-color:hsla(0,0%,100%,0.8);</div><div class="line">background-color:rgba(255,255,255,0.8);</div></pre></td></tr></table></figure>
+<p>不使用opacity的原因是：opacity使里面的元素也透明了，而上面的不会。background-color:rgba(0,0,0,0.5)，此写法解决opacity带来的元素也透明问题，单IE8低版本浏览器不支持。</p>
+<h3 id="19-初始化em，u的斜体"><a href="#19-初始化em，u的斜体" class="headerlink" title="19.初始化em，u的斜体"></a>19.初始化em，u的斜体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">em,u&#123;font-style: normal;&#125;</div></pre></td></tr></table></figure>
+<h3 id="20-取消手机页面点击a中图片出现的虚线框问题"><a href="#20-取消手机页面点击a中图片出现的虚线框问题" class="headerlink" title="20.取消手机页面点击a中图片出现的虚线框问题"></a>20.取消手机页面点击a中图片出现的虚线框问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-webkit-tap-highlight-color: transparent;</div><div class="line">-webkit-touch-callout: none;</div><div class="line">-webkit-user-select: none;</div></pre></td></tr></table></figure>
+<h3 id="21-媒体查询功能"><a href="#21-媒体查询功能" class="headerlink" title="21.媒体查询功能:"></a>21.媒体查询功能:</h3><p>一般写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@media screen and (max-width: 960px)&#123;</div><div class="line">    body&#123;</div><div class="line">        background: #000;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>应该有人会发现上面这段代码里面有个screen，他的意思是在告知设备在打印页面时使用衬线字体，在屏幕上显示时用无衬线字体。但是目前我发现很多网站都会直接省略screen,因为你的网站可能不需要考虑用户去打印时，你可以直接这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@media (max-width: 960px)&#123;</div><div class="line">    body&#123;</div><div class="line">        background: #000;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其中css2的媒体查询：``</p>
+<p>我们想知道移动设备是不是纵向放置的显示屏，可以这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen and (orientation:portrait)&quot; href=&quot;style.css&quot;&gt;</div></pre></td></tr></table></figure>
+<p>我们把第一段的代码也用CSS2来实现，让它一样可以让页面宽度小于960的执行指定的样式文件：</p>
+<p><link rel="stylesheet" type="text/css" media="screen and (max-width:960px)" href="style.css"><br>但是上面这个方法，最大的弊端是他会增加页面http的请求次数，增加了页面负担，我们用CSS3把样式都写在一个文件里面才是最佳的方法。</p>
+<p>下面的写法是实现尺寸等于480px：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@media (max-device-height:480px) and (-webkit-min-device-pixel-ratio:2)&#123;</div><div class="line">//自己添加的样式</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其中对于-webkit-min-device-pixel-ratio作如下解释：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">-webkit-min-device-pixel-ratio为1.0</div><div class="line">1.  所有非Retina的Mac</div><div class="line">2.  所有非Retina的iOS设备</div><div class="line">3.  Acer Iconia A500 </div><div class="line">4.  Samsung Galaxy Tab 10.1</div><div class="line">5.  Samsung Galaxy S </div><div class="line"></div><div class="line"> -webkit-min-device-pixel-ratio为1.3</div><div class="line">1.  Google Nexus 7</div><div class="line"></div><div class="line">-webkit-min-device-pixel-ratio为1.5</div><div class="line">1.  Google Nexus S </div><div class="line">2.  Samsung Galaxy S II </div><div class="line">3.  HTC Desire</div><div class="line">4.  HTC Desire HD</div><div class="line">5.  HTC Incredible S </div><div class="line">6.  HTC Velocity</div><div class="line">7.  HTC Sensation </div><div class="line"></div><div class="line">-webkit-min-device-pixel-ratio为2.0</div><div class="line">1.  iPhone 4</div><div class="line">2.  iPhone 4S</div><div class="line">3.  iPhone 5</div><div class="line">4.  iPad (3rd generation)</div><div class="line">5.  iPad 4</div><div class="line">6.  所有Retina displays 的MAC</div><div class="line">7.  Google Galaxy Nexus</div><div class="line">8.  Google Nexus 4</div><div class="line">9.  Google Nexus 10</div><div class="line">10.  Samsung Galaxy S III</div><div class="line">11.  Samsung Galaxy Note II</div><div class="line">12.  Sony Xperia S</div><div class="line">13.  HTC One X</div></pre></td></tr></table></figure>
+<h3 id="22-CSS美化Placeholder提示信息的样式兼容："><a href="#22-CSS美化Placeholder提示信息的样式兼容：" class="headerlink" title="22.CSS美化Placeholder提示信息的样式兼容："></a>22.CSS美化Placeholder提示信息的样式兼容：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">input::-webkit-input-placeholder&#123;color:#AAAAAA;&#125;</div><div class="line">input:focus::-webkit-input-placeholder&#123;color:#EEEEEE;&#125;</div></pre></td></tr></table></figure>
+<p>手机对Placeholder提示信息都基本带有默认的样式，要修改其样式需要这样添加：<br>/<em> WebKit browsers </em>/::-webkit-input-placeholder {color: #777;}<br>/<em> Mozilla Firefox 4 to 18 </em>/:-moz-placeholder {color: #777;opacity: 1;}<br>/<em> Mozilla Firefox 19+ </em>/::-moz-placeholder {color: #777;opacity: 1;}<br>/<em> Internet Explorer 10+ </em>/:-ms-input-placeholder {color: #777;}</p>
+<ul>
+<li>谷歌浏览器(Webkit): ::-webkit-input-placeholder pseudo-element;</li>
+<li>IE10: :-ms-input-placeholder pseudo-class;</li>
+<li>火狐浏览器(Gecko18-): :-moz-placeholder pseudo-class;</li>
+<li>火狐浏览器(Gecko19+): ::-moz-placeholder pseudo-element;</li>
+<li>Opera(Presto): 无。</li>
+</ul>
+<h3 id="23-清除IOS系统手机对input框的默认样式："><a href="#23-清除IOS系统手机对input框的默认样式：" class="headerlink" title="23.清除IOS系统手机对input框的默认样式："></a>23.清除IOS系统手机对input框的默认样式：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-appearance:none;</div></pre></td></tr></table></figure>
+<h3 id="24-取消点击a标签出现的高亮："><a href="#24-取消点击a标签出现的高亮：" class="headerlink" title="24.取消点击a标签出现的高亮："></a>24.取消点击a标签出现的高亮：</h3><p><code>-webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 *</code>/</p>
+<h3 id="25-开发移动端页面时候，经常会设置滚动条的默认样式"><a href="#25-开发移动端页面时候，经常会设置滚动条的默认样式" class="headerlink" title="25.开发移动端页面时候，经常会设置滚动条的默认样式"></a>25.开发移动端页面时候，经常会设置滚动条的默认样式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">- /* 设置滚动条的样式 */</div><div class="line">  - ::-webkit-scrollbar &#123;</div><div class="line">  - width:12px;</div><div class="line">  - &#125;</div><div class="line">  - /* 滚动槽 */</div><div class="line">  - ::-webkit-scrollbar-track &#123;</div><div class="line">  - -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);</div><div class="line">  - border-radius:10px;</div><div class="line">  - &#125;</div><div class="line">  - /* 滚动条滑块 */</div><div class="line">  - ::-webkit-scrollbar-thumb &#123;</div><div class="line">  - border-radius:10px;</div><div class="line">  - background:rgba(0,0,0,0.1);</div><div class="line">  - -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);</div><div class="line">  - &#125;</div><div class="line">  - ::-webkit-scrollbar-thumb:window-inactive &#123;</div><div class="line">  - background:rgba(255,0,0,0.4);</div><div class="line">  - &#125;</div></pre></td></tr></table></figure>
+<h3 id="26-为移动端页面中滑动滚动条的时候，添加惯性效果的方法"><a href="#26-为移动端页面中滑动滚动条的时候，添加惯性效果的方法" class="headerlink" title="26.为移动端页面中滑动滚动条的时候，添加惯性效果的方法"></a>26.为移动端页面中滑动滚动条的时候，添加惯性效果的方法</h3><p>首先设置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div&#123;height:100%;overflow-y:auto;&#125;</div></pre></td></tr></table></figure>
+<p>但是实际在 iPhone 上测试时，发现 Safari（也包括很多 iOS App 内置浏览器使用的 UIWebView）竟然完全禁用掉了著名的「惯性滚动」效果。但解决方法是有的，令人吃惊的是还非常简单：只有一条 CSS 属性即可解决问题：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-overflow-scrolling:touch;</div></pre></td></tr></table></figure>
+<p>有的同学添加了这一条属性后遇到了向下滑动后页面变成空白的问题，实际上可以通过一条 CSS 属性把页面加载到内存来解决：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-transform:translate3d(0,0,0);</div></pre></td></tr></table></figure>
+<p>注：如果设置了-webkit-overflow-scrolling: touch;那么在IOS系统下对于改变滚动条的默认样式将失效，即上面一条所述。</p>
+<h3 id="27-样式实现三角形："><a href="#27-样式实现三角形：" class="headerlink" title="27.样式实现三角形："></a>27.样式实现三角形：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">position:absolute;</div><div class="line">left:50%;</div><div class="line">bottom:0;</div><div class="line">margin-left:-10px;</div><div class="line">width:0;</div><div class="line">height:0; </div><div class="line">border-width:10px;</div><div class="line">border-style:solid dashed dashed dashed;</div><div class="line">border-color:transparent transparent #71151c transparent;</div></pre></td></tr></table></figure>
+<h3 id="28-移动端实现控制文本行数"><a href="#28-移动端实现控制文本行数" class="headerlink" title="28.移动端实现控制文本行数"></a>28.移动端实现控制文本行数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">display: -webkit-box;</div><div class="line">-webkit-line-clamp: 4;</div><div class="line">overflow: hidden;</div><div class="line">text-overflow: ellipsis;</div><div class="line">-webkit-box-orient: vertical;</div></pre></td></tr></table></figure>
+<h3 id="29-css3水平垂直居中"><a href="#29-css3水平垂直居中" class="headerlink" title="29. css3水平垂直居中"></a>29. css3水平垂直居中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">display: box; </div><div class="line">display: -webkit-box; </div><div class="line">display: -moz-box; </div><div class="line">-webkit-box-pack:center; </div><div class="line">-moz-box-pack:center; </div><div class="line">-webkit-box-align:center; </div><div class="line">-moz-box-align:center;</div></pre></td></tr></table></figure>
+<h3 id="30-Css–input输入框点击时去掉外框outline-medium-chrome"><a href="#30-Css–input输入框点击时去掉外框outline-medium-chrome" class="headerlink" title="30.Css–input输入框点击时去掉外框outline:medium;(chrome)"></a>30.Css–input输入框点击时去掉外框outline:medium;(chrome)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">outline:medium;</div></pre></td></tr></table></figure>
+<h3 id="31-移动端字体"><a href="#31-移动端字体" class="headerlink" title="31.移动端字体"></a>31.移动端字体</h3><p>/<em> 移动端定义字体的代码 </em>/</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">body&#123;font-family:Helvetica;&#125;</div></pre></td></tr></table></figure>
+<h3 id="32-禁止ios-长按时不触发系统的菜单，禁止ios-amp-android长按时下载图片"><a href="#32-禁止ios-长按时不触发系统的菜单，禁止ios-amp-android长按时下载图片" class="headerlink" title="32.禁止ios 长按时不触发系统的菜单，禁止ios&amp;android长按时下载图片"></a>32.禁止ios 长按时不触发系统的菜单，禁止ios&amp;android长按时下载图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.css&#123;-webkit-touch-callout: none&#125;</div></pre></td></tr></table></figure>
+<h3 id="33-禁止ios和android用户选中文字"><a href="#33-禁止ios和android用户选中文字" class="headerlink" title="33.禁止ios和android用户选中文字"></a>33.禁止ios和android用户选中文字</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.css&#123;-webkit-user-select:none&#125;</div></pre></td></tr></table></figure>
+<h3 id="34-打电话发短信，发邮件的怎么实现"><a href="#34-打电话发短信，发邮件的怎么实现" class="headerlink" title="34.打电话发短信，发邮件的怎么实现"></a>34.打电话发短信，发邮件的怎么实现</h3><p>打电话：<code>[打电话给:0755-10086](tel:0755-10086)</code><br>发短信：winphone系统无效，<code>[发短信给: 10086](sms:10086)</code><br>发邮件：<code>[10086@qq.com](mailTo:10086@qq.com)</code></p>
+<h3 id="35-css3属性-webkit-filter-改变模糊度-亮度-透明度等方法"><a href="#35-css3属性-webkit-filter-改变模糊度-亮度-透明度等方法" class="headerlink" title="35.css3属性 -webkit-filter(改变模糊度 亮度 透明度等方法)"></a>35.css3属性 -webkit-filter(改变模糊度 亮度 透明度等方法)</h3><p>　　-webkit-filter是css3的一个属性，Webkit率先支持了这几个功能，感觉效果很不错。下面咱们就学习一下filter这个属性吧。现在规范中支持的效果有：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- grayscale 灰度               值为0-1之间的小数 </div><div class="line">- sepia 褐色　　　　　　   值为0-1之间的小数</div><div class="line">- saturate 饱和度　　　　 值为num</div><div class="line">- hue-rotate 色相旋转　　值为angle</div><div class="line">- invert 反色　　　　　　  值为0-1之间的小数</div><div class="line">- opacity 透明度　　　　　值为0-1之间的小数</div><div class="line">- brightness 亮度　　　　 值为0-1之间的小数</div><div class="line">- contrast 对比度　　　　 值为num</div><div class="line">- blur 模糊　　　　　　     值为length</div><div class="line">- drop-shadow 阴影</div></pre></td></tr></table></figure>
+<p>用法是标准的CSS写法，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-filter: blur(2px);</div></pre></td></tr></table></figure>
+<p>使用方法：（配合动画使用）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">.jaguar-con-show img.jaguar-con-imglast&#123;               </div><div class="line">    -webkit-transition: all 0.3s ease-in-out;</div><div class="line">    -moz-transition: all 0.3s ease-in-out;</div><div class="line">    -o-transition: all 0.3s ease-in-out;</div><div class="line">    -ms-transition: all 0.3s ease-in-out;</div><div class="line">    transition: all 0.3s ease-in-out;</div><div class="line">    </div><div class="line">&#125;</div><div class="line">.jaguar-con-show img.jaguar-con-imglast&#123;   </div><div class="line">    -webkit-filter: blur(3px) brightness(.6);</div><div class="line">    -moz-filter: blur(3px) brightness(.6);</div><div class="line">    -o-filter: blur(3px) brightness(.6);</div><div class="line">    -ms-filter: blur(3px) brightness(.6);    </div><div class="line">    filter: blur(3px) brightness(.5); </div><div class="line">    -webkit-transform:scale(1.1,1.1);</div><div class="line">    -moz-transform:scale(1.1,1.1);</div><div class="line">    /*border: 3px solid #000;*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="36-CSS-pointer-events"><a href="#36-CSS-pointer-events" class="headerlink" title="36.CSS pointer-events"></a>36.CSS pointer-events</h3><p>Pointer-events原本来源于SVG，目前在很多浏览器中已经得到体现。不过，要让任何HTML元素生效还得借助于一点点css。该属性称之为pointer-events，基本上可以将它设置为auto，这是正常的行为，而“none”是一个有趣的属性。<br>如果你已经设置一个元素的css属性为pointer-events: none。它将不会捕获任何click事件，而是让事件穿过该元素到达下面的元素.<br>Firefox 3.6+和chrome 2.0+ 以及safari 4.0+都支持这个CSS3属性，IE6/7/8/9都不支持，Opera在SVG中支持该属性但是HTML中不支持。</p>
+<h3 id="37-取消手机点击屏幕时，会出现的灰块"><a href="#37-取消手机点击屏幕时，会出现的灰块" class="headerlink" title="37.取消手机点击屏幕时，会出现的灰块"></a>37.取消手机点击屏幕时，会出现的灰块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">html,body&#123;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);&#125;</div></pre></td></tr></table></figure>
+<h3 id="38-样式改变单词的大小写"><a href="#38-样式改变单词的大小写" class="headerlink" title="38.样式改变单词的大小写"></a>38.样式改变单词的大小写</h3><p>首字母大写：<code>text-transform:capitalize</code><br>全部大写：<code>text-transform:uppercase</code><br>全部小写：<code>text-transform:lowercasecase</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;span style=&quot;text-transform:capitalize;&quot; &gt;this is a test!!!&lt;/span&gt;</div><div class="line">首字母大写&lt;input type=&quot;text&quot; style=&quot;text-transform:capitalize;&quot;&gt;</div><div class="line">全部大写&lt;input type=&quot;text&quot; style=&quot;text-transform:uppercase;&quot;&gt;</div><div class="line">全部小写&lt;input type=&quot;text&quot; style=&quot;text-transform:lowercasecase;&quot;&gt;</div></pre></td></tr></table></figure>
+<h3 id="39-设置表格中的td宽度固定table-layout-fixed"><a href="#39-设置表格中的td宽度固定table-layout-fixed" class="headerlink" title="39.设置表格中的td宽度固定table-layout:fixed"></a>39.设置表格中的td宽度固定table-layout:fixed</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">table</div><div class="line">  &#123;</div><div class="line">  table-layout:fixed;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<p>table-layout可能的值如下：<br>automatic：默认。列宽度由单元格内容设定。<br>fixed：列宽由表格宽度和列宽度设定。<br>inherit：规定应该从父元素继承 table-layout 属性的值。</p>
+<h3 id="40-合并表格边框border-collapse-collapse"><a href="#40-合并表格边框border-collapse-collapse" class="headerlink" title="40.合并表格边框border-collapse:collapse"></a>40.合并表格边框border-collapse:collapse</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">table</div><div class="line">  &#123;</div><div class="line">  border-collapse:collapse;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<p>border-collapse可能的值如下：<br>separate：默认值。边框会被分开。不会忽略 border-spacing 和 empty-cells 属性。<br>collapse：如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。<br>inherit：规定应该从父元素继承 border-collapse 属性的值。<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">table</div><div class="line">  &#123;</div><div class="line">  border-collapse:collapse;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">table, td, th</div><div class="line">  &#123;</div><div class="line">  border:1px solid black;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h3 id="41-不允许用户选中文本user-select：none"><a href="#41-不允许用户选中文本user-select：none" class="headerlink" title="41.不允许用户选中文本user-select：none"></a>41.不允许用户选中文本user-select：none</h3><p>html代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;test&quot; onselectstart=&quot;return false;&quot; unselectable=&quot;on&quot;&gt;选择我试试，你会发现怎么也选择不到我，哈哈哈哈&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>css代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.test&#123;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;&#125;</div></pre></td></tr></table></figure>
+<p>代码解释：</p>
+<ul>
+<li>IE6-9不支持该属性，但支持使用标签属性 onselectstart=”return false;” 来达到 user-select:none 的效果；Safari和Chrome也支持该标签属性；</li>
+<li>直到Opera12.5仍然不支持该属性，但和IE6-9一样，也支持使用私有的标签属性 unselectable=”on” 来达到 user-select:none 的效果；unselectable 的另一个值是 off；</li>
+<li>除Chrome和Safari外，在其它浏览器中，如果将文本设置为 -ms-user-select:none;，则用户将无法在该文本块中开始选择文本。不过，如果用户在页面的其他区域开始选择文本，则用户仍然可以继续选择将文本设置为-ms-user-select:none; 的区域文本；</li>
+<li>对应的脚本特性为userSelect。</li>
+</ul>
+<h3 id="42-让内容平均分配"><a href="#42-让内容平均分配" class="headerlink" title="42.让内容平均分配"></a>42.让内容平均分配</h3><p>html代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;nav&gt;</div><div class="line">    &lt;a href=&quot;#&quot;&gt;a&lt;/a&gt;</div><div class="line">    &lt;a href=&quot;#&quot;&gt;b&lt;/a&gt;</div><div class="line">    &lt;a href=&quot;#&quot;&gt;c&lt;/a&gt;</div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure>
+<p>css代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nav&#123;display:-webkit-flex;display:flex;&#125;</div><div class="line">a&#123;-webkit-flex:1;flex:1;&#125;</div></pre></td></tr></table></figure>
+<h3 id="43-html-title属性内容换行方法"><a href="#43-html-title属性内容换行方法" class="headerlink" title="43.html title属性内容换行方法"></a>43.html title属性内容换行方法</h3><p>a.直接填写title内容时候“回车键”换行<br>b.使用html title换行代码<br>使用代码换行共两种代码，均可实现html标签内title内容显示时换行。<br>换行代码符合分别为：<br>“<code>`”和“</code><br><code>”
+“</code><br><code>”拼写：&amp;（and符号，键盘数字键7一起&amp;）+ #（井号）+ 10（阿拉伯数字十）+ ;（小写分号）
+“</code><br>`”拼写：&amp;（and符号，键盘数字键7一起&amp;）+ #（井号）+ 13（阿拉伯数字十三）+ ;（小写分号）<br>以上符合数字输入均必须英文半角模式输入。使用时候，在需要换行地方任选一种（组）换行符号代码即可。</p>
+<h3 id="44-移动端定宽布局，安卓上文字变大了解决办法"><a href="#44-移动端定宽布局，安卓上文字变大了解决办法" class="headerlink" title="44.移动端定宽布局，安卓上文字变大了解决办法"></a>44.移动端定宽布局，安卓上文字变大了解决办法</h3><p>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=750,user-scalable=no,target-densitydpi=device-dpi&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>那么解决办法：<br><strong>给文字区外面的div设最大高度100%</strong></p>
+<h3 id="45-怎样取消点击a标签后，出现的虚线框呢"><a href="#45-怎样取消点击a标签后，出现的虚线框呢" class="headerlink" title="45.怎样取消点击a标签后，出现的虚线框呢"></a>45.怎样取消点击a标签后，出现的虚线框呢</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">a:focus &#123;  outline:none;   -moz-outline:none;&#125;</div></pre></td></tr></table></figure>
+<h3 id="46-微信会自动把公众号网页上的电话号码变成蓝色"><a href="#46-微信会自动把公众号网页上的电话号码变成蓝色" class="headerlink" title="46.微信会自动把公众号网页上的电话号码变成蓝色?"></a>46.微信会自动把公众号网页上的电话号码变成蓝色?</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt;</div></pre></td></tr></table></figure>
+<h3 id="47-box-shadow"><a href="#47-box-shadow" class="headerlink" title="47.box-shadow"></a>47.box-shadow</h3><p>为了兼容各主流浏览器并支持这些主流浏览器的较低版本，在基于Webkit的Chrome和Safari等浏览器上使用box-shadow属性时，我们需要将属性的名称写成-webkit-box-shadow的形式。Firefox浏览器则需要写成-moz-box-shadow的形式。全面的写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.box-shadow-6&#123;  </div><div class="line">    box-shadow:-10px 0 10px red, /*左边阴影*/  </div><div class="line">    10px 0 10px yellow, /*右边阴影*/  </div><div class="line">    0 -10px 10px blue, /*顶部阴影*/  </div><div class="line">    0 10px 10px green; /*底边阴影*/  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>参考地址：<a href="http://blog.csdn.net/freshlover/article/details/7610269" target="_blank" rel="external">http://blog.csdn.net/freshlov…</a></p>
+<h3 id="48-网页字体设置"><a href="#48-网页字体设置" class="headerlink" title="48.网页字体设置"></a>48.网页字体设置</h3><p>@font-face{</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">font-family:&apos;YourWebFontName&apos;;</div><div class="line">src:url(&apos;YourWebFontName.eot&apos;); /* IE9 Compat Modes */</div><div class="line">src:url(&apos;YourWebFontName.eot?#iefix&apos;) format(&apos;embedded-opentype&apos;), /* IE6-IE8 */</div><div class="line">    url(&apos;YourWebFontName.woff&apos;) format(&apos;woff&apos;), /* Modern Browsers */</div><div class="line">    url(&apos;YourWebFontName.ttf&apos;)  format(&apos;truetype&apos;), /* Safari, Android, iOS */</div><div class="line">    url(&apos;YourWebFontName.svg#YourWebFontName&apos;) format(&apos;svg&apos;); /* Legacy iOS */&#125;</div></pre></td></tr></table></figure>
+<p>参考地址：<a href="https://segmentfault.com/a/1190000004179303" target="_blank" rel="external">https://segmentfault.com/a/11…</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>欢迎打赏,求硬币,求香蕉,求游艇,火箭!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinzhifu.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2015/08/28/CSS&CSS3常用样式小结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2015/09/12/流式布局/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          流式布局
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/06/22/Chrome console使用指南/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Chrome 控制台使用指南</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
+  
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 Moker
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true,
+		showTags: true
+	}
+</script>
+
+<script>!function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var e={};return n.m=t,n.c=e,n.p="./",n(0)}([function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function o(t,n){var e=/\/|index.html/g;return t.replace(e,"")===n.replace(e,"")}function i(){for(var t=document.querySelectorAll(".js-header-menu li a"),n=window.location.pathname,e=0,r=t.length;e<r;e++){var i=t[e];o(n,i.getAttribute("href"))&&(0,d.default)(i,"active")}}function u(t){for(var n=t.offsetLeft,e=t.offsetParent;null!==e;)n+=e.offsetLeft,e=e.offsetParent;return n}function f(t){for(var n=t.offsetTop,e=t.offsetParent;null!==e;)n+=e.offsetTop,e=e.offsetParent;return n}function c(t,n,e,r,o){var i=u(t),c=f(t)-n;if(c-e<=o){var a=t.$newDom;a||(a=t.cloneNode(!0),(0,h.default)(t,a),t.$newDom=a,a.style.position="fixed",a.style.top=(e||c)+"px",a.style.left=i+"px",a.style.zIndex=r||2,a.style.width="100%",a.style.color="#fff"),a.style.visibility="visible",t.style.visibility="hidden"}else{t.style.visibility="visible";var s=t.$newDom;s&&(s.style.visibility="hidden")}}function a(){var t=document.querySelector(".js-overlay"),n=document.querySelector(".js-header-menu");c(t,document.body.scrollTop,-63,2,0),c(n,document.body.scrollTop,1,3,0)}function s(){document.querySelector("#container").addEventListener("scroll",function(t){a()}),window.addEventListener("scroll",function(t){a()}),a()}function l(){x.default.versions.mobile&&window.screen.width<800&&(i(),s())}var p=e(71),d=r(p),v=e(72),y=(r(v),e(84)),h=r(y),b=e(69),x=r(b),m=e(75),g=r(m),w=e(70);l(),(0,w.addLoadEvent)(function(){g.default.init()}),t.exports={}},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(49),o=e(15);t.exports=function(t){return r(o(t))}},function(t,n,e){t.exports=!e(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n,e){var r=e(6),o=e(12);t.exports=e(4)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(10),o=e(30),i=e(24),u=Object.defineProperty;n.f=e(4)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(22)("wks"),o=e(13),i=e(1).Symbol,u="function"==typeof i,f=t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)("Symbol."+t))};f.store=r},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(35),o=e(16);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){var e=t.exports={version:"2.4.0"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(6).f,o=e(2),i=e(7)("toStringTag");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(22)("keys"),o=e(13);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(1),o=e(14),i=e(18),u=e(26),f=e(6).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||f(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(7)},function(t,n,e){var r=e(1),o=e(14),i=e(46),u=e(5),f="prototype",c=function(t,n,e){var a,s,l,p=t&c.F,d=t&c.G,v=t&c.S,y=t&c.P,h=t&c.B,b=t&c.W,x=d?o:o[n]||(o[n]={}),m=x[f],g=d?r:v?r[n]:(r[n]||{})[f];d&&(e=n);for(a in e)s=!p&&g&&void 0!==g[a],s&&a in x||(l=s?g[a]:e[a],x[a]=d&&"function"!=typeof g[a]?e[a]:h&&s?i(l,r):b&&g[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[f]=t[f],n}(l):y&&"function"==typeof l?i(Function.call,l):l,y&&((x.virtual||(x.virtual={}))[a]=l,t&c.R&&m&&!m[a]&&u(m,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(4)&&!e(8)(function(){return 7!=Object.defineProperty(e(29)("div"),"a",{get:function(){return 7}}).a})},function(t,n,e){"use strict";var r=e(18),o=e(27),i=e(36),u=e(5),f=e(2),c=e(17),a=e(51),s=e(20),l=e(58),p=e(7)("iterator"),d=!([].keys&&"next"in[].keys()),v="@@iterator",y="keys",h="values",b=function(){return this};t.exports=function(t,n,e,x,m,g,w){a(e,n,x);var O,S,_,j=function(t){if(!d&&t in A)return A[t];switch(t){case y:return function(){return new e(this,t)};case h:return function(){return new e(this,t)}}return function(){return new e(this,t)}},P=n+" Iterator",E=m==h,M=!1,A=t.prototype,T=A[p]||A[v]||m&&A[m],L=T||j(m),N=m?E?j("entries"):L:void 0,C="Array"==n?A.entries||T:T;if(C&&(_=l(C.call(new t)),_!==Object.prototype&&(s(_,P,!0),r||f(_,p)||u(_,p,b))),E&&T&&T.name!==h&&(M=!0,L=function(){return T.call(this)}),r&&!w||!d&&!M&&A[p]||u(A,p,L),c[n]=L,c[P]=b,m)if(O={values:E?L:j(h),keys:g?L:j(y),entries:N},w)for(S in O)S in A||i(A,S,O[S]);else o(o.P+o.F*(d||M),n,O);return O}},function(t,n,e){var r=e(10),o=e(55),i=e(16),u=e(21)("IE_PROTO"),f=function(){},c="prototype",a=function(){var t,n=e(29)("iframe"),r=i.length,o="<",u=">";for(n.style.display="none",e(48).appendChild(n),n.src="javascript:",t=n.contentWindow.document,t.open(),t.write(o+"script"+u+"document.F=Object"+o+"/script"+u),t.close(),a=t.F;r--;)delete a[c][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(f[c]=r(t),e=new f,f[c]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n,e){var r=e(35),o=e(16).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(2),o=e(3),i=e(45)(!1),u=e(21)("IE_PROTO");t.exports=function(t,n){var e,f=o(t),c=0,a=[];for(e in f)e!=u&&r(f,e)&&a.push(e);for(;n.length>c;)r(f,e=n[c++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(5)},function(t,n,e){var r=e(15);t.exports=function(t){return Object(r(t))}},function(t,n,e){t.exports={default:e(41),__esModule:!0}},function(t,n,e){t.exports={default:e(42),__esModule:!0}},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(39),i=r(o),u=e(38),f=r(u),c="function"==typeof f.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":typeof t};n.default="function"==typeof f.default&&"symbol"===c(i.default)?function(t){return"undefined"==typeof t?"undefined":c(t)}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":"undefined"==typeof t?"undefined":c(t)}},function(t,n,e){e(65),e(63),e(66),e(67),t.exports=e(14).Symbol},function(t,n,e){e(64),e(68),t.exports=e(26).f("iterator")},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(3),o=e(61),i=e(60);t.exports=function(t){return function(n,e,u){var f,c=r(n),a=o(c.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if(f=c[s++],f!=f)return!0}else for(;a>s;s++)if((t||s in c)&&c[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(43);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(9),o=e(34),i=e(19);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,f=e(t),c=i.f,a=0;f.length>a;)c.call(t,u=f[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(28);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n,e){var r=e(28);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){"use strict";var r=e(32),o=e(12),i=e(20),u={};e(5)(u,e(7)("iterator"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+" Iterator")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(9),o=e(3);t.exports=function(t,n){for(var e,i=o(t),u=r(i),f=u.length,c=0;f>c;)if(i[e=u[c++]]===n)return e}},function(t,n,e){var r=e(13)("meta"),o=e(11),i=e(2),u=e(6).f,f=0,c=Object.isExtensible||function(){return!0},a=!e(8)(function(){return c(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:"O"+ ++f,w:{}}})},l=function(t,n){if(!o(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!c(t))return"F";if(!n)return"E";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!c(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&v.NEED&&c(t)&&!i(t,r)&&s(t),t},v=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){var r=e(6),o=e(10),i=e(9);t.exports=e(4)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),f=u.length,c=0;f>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(19),o=e(12),i=e(3),u=e(24),f=e(2),c=e(30),a=Object.getOwnPropertyDescriptor;n.f=e(4)?a:function(t,n){if(t=i(t),n=u(n,!0),c)try{return a(t,n)}catch(t){}if(f(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(3),o=e(33).f,i={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],f=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?f(t):o(r(t))}},function(t,n,e){var r=e(2),o=e(37),i=e(21)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(23),o=e(15);t.exports=function(t){return function(n,e){var i,u,f=String(o(n)),c=r(e),a=f.length;return c<0||c>=a?t?"":void 0:(i=f.charCodeAt(c),i<55296||i>56319||c+1===a||(u=f.charCodeAt(c+1))<56320||u>57343?t?f.charAt(c):i:t?f.slice(c,c+2):(i-55296<<10)+(u-56320)+65536)}}},function(t,n,e){var r=e(23),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(23),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){"use strict";var r=e(44),o=e(52),i=e(17),u=e(3);t.exports=e(31)(Array,"Array",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):"keys"==n?o(0,e):"values"==n?o(0,t[e]):o(0,[e,t[e]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,n){},function(t,n,e){"use strict";var r=e(59)(!0);e(31)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){"use strict";var r=e(1),o=e(2),i=e(4),u=e(27),f=e(36),c=e(54).KEY,a=e(8),s=e(22),l=e(20),p=e(13),d=e(7),v=e(26),y=e(25),h=e(53),b=e(47),x=e(50),m=e(10),g=e(3),w=e(24),O=e(12),S=e(32),_=e(57),j=e(56),P=e(6),E=e(9),M=j.f,A=P.f,T=_.f,L=r.Symbol,N=r.JSON,C=N&&N.stringify,k="prototype",F=d("_hidden"),q=d("toPrimitive"),I={}.propertyIsEnumerable,B=s("symbol-registry"),D=s("symbols"),W=s("op-symbols"),H=Object[k],K="function"==typeof L,R=r.QObject,J=!R||!R[k]||!R[k].findChild,U=i&&a(function(){return 7!=S(A({},"a",{get:function(){return A(this,"a",{value:7}).a}})).a})?function(t,n,e){var r=M(H,n);r&&delete H[n],A(t,n,e),r&&t!==H&&A(H,n,r)}:A,G=function(t){var n=D[t]=S(L[k]);return n._k=t,n},$=K&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},z=function(t,n,e){return t===H&&z(W,n,e),m(t),n=w(n,!0),m(e),o(D,n)?(e.enumerable?(o(t,F)&&t[F][n]&&(t[F][n]=!1),e=S(e,{enumerable:O(0,!1)})):(o(t,F)||A(t,F,O(1,{})),t[F][n]=!0),U(t,n,e)):A(t,n,e)},Y=function(t,n){m(t);for(var e,r=b(n=g(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?S(t):Y(S(t),n)},X=function(t){var n=I.call(this,t=w(t,!0));return!(this===H&&o(D,t)&&!o(W,t))&&(!(n||!o(this,t)||!o(D,t)||o(this,F)&&this[F][t])||n)},V=function(t,n){if(t=g(t),n=w(n,!0),t!==H||!o(D,n)||o(W,n)){var e=M(t,n);return!e||!o(D,n)||o(t,F)&&t[F][n]||(e.enumerable=!0),e}},Z=function(t){for(var n,e=T(g(t)),r=[],i=0;e.length>i;)o(D,n=e[i++])||n==F||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===H,r=T(e?W:g(t)),i=[],u=0;r.length>u;)!o(D,n=r[u++])||e&&!o(H,n)||i.push(D[n]);return i};K||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===H&&n.call(W,e),o(this,F)&&o(this[F],t)&&(this[F][t]=!1),U(this,t,O(1,e))};return i&&J&&U(H,t,{configurable:!0,set:n}),G(t)},f(L[k],"toString",function(){return this._k}),j.f=V,P.f=z,e(33).f=_.f=Z,e(19).f=X,e(34).f=tt,i&&!e(18)&&f(H,"propertyIsEnumerable",X,!0),v.f=function(t){return G(d(t))}),u(u.G+u.W+u.F*!K,{Symbol:L});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var nt=E(d.store),et=0;nt.length>et;)y(nt[et++]);u(u.S+u.F*!K,"Symbol",{for:function(t){return o(B,t+="")?B[t]:B[t]=L(t)},keyFor:function(t){if($(t))return h(B,t);throw TypeError(t+" is not a symbol!")},useSetter:function(){J=!0},useSimple:function(){J=!1}}),u(u.S+u.F*!K,"Object",{create:Q,defineProperty:z,defineProperties:Y,getOwnPropertyDescriptor:V,getOwnPropertyNames:Z,getOwnPropertySymbols:tt}),N&&u(u.S+u.F*(!K||a(function(){var t=L();return"[null]"!=C([t])||"{}"!=C({a:t})||"{}"!=C(Object(t))})),"JSON",{stringify:function(t){if(void 0!==t&&!$(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],"function"==typeof n&&(e=n),!e&&x(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!$(n))return n}),r[1]=n,C.apply(N,r)}}}),L[k][q]||e(5)(L[k],q,L[k].valueOf),l(L,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){e(25)("asyncIterator")},function(t,n,e){e(25)("observable")},function(t,n,e){e(62);for(var r=e(1),o=e(5),i=e(17),u=e(7)("toStringTag"),f=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],c=0;c<5;c++){var a=f[c],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(t,n){"use strict";var e={versions:function(){var t=window.navigator.userAgent;return{trident:t.indexOf("Trident")>-1,presto:t.indexOf("Presto")>-1,webKit:t.indexOf("AppleWebKit")>-1,gecko:t.indexOf("Gecko")>-1&&t.indexOf("KHTML")==-1,mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")>-1||t.indexOf("Linux")>-1,iPhone:t.indexOf("iPhone")>-1||t.indexOf("Mac")>-1,iPad:t.indexOf("iPad")>-1,webApp:t.indexOf("Safari")==-1,weixin:t.indexOf("MicroMessenger")==-1}}()};t.exports=e},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=e(40),i=r(o),u=function(){function t(t,n,e){return n||e?String.fromCharCode(n||e):o[t]||t}function n(t){return l[t]}var e=/&quot;|&lt;|&gt;|&amp;|&nbsp;|&apos;|&#(\d+);|&#(\d+)/g,r=/['<> "&]/g,o={"&quot;":'"',"&lt;":"<","&gt;":">","&amp;":"&","&nbsp;":" "},f=/\u00a0/g,c=/<br\s*\/?>/gi,a=/\r?\n/g,s=/\s/g,l={};for(var p in o)l[o[p]]=p;return o["&apos;"]="'",l["'"]="&#39;",{encode:function(t){return t?(""+t).replace(r,n).replace(a,"<br/>").replace(s,"&nbsp;"):""},decode:function(n){return n?(""+n).replace(c,"\n").replace(e,t).replace(f," "):""},encodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},encodeBase16forJSON:function(t){if(!t)return t;t=t.replace(/[\u4E00-\u9FBF]/gi,function(t){return escape(t).replace("%u","\\u")});for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},decodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e+=2)n.push(String.fromCharCode("0x"+t.slice(e,e+2)));return n.join("")},encodeObject:function(t){if(t instanceof Array)for(var n=0,e=t.length;e>n;n++)t[n]=u.encodeObject(t[n]);else if("object"==("undefined"==typeof t?"undefined":(0,i.default)(t)))for(var r in t)t[r]=u.encodeObject(t[r]);else if("string"==typeof t)return u.encode(t);return t},loadScript:function(t){var n=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(n),n.setAttribute("src",t)},addLoadEvent:function(t){var n=window.onload;"function"!=typeof window.onload?window.onload=t:window.onload=function(){n(),t()}}}}();t.exports=u},function(t,n){function e(t,n){t.classList?t.classList.add(n):t.className+=" "+n}t.exports=e},function(t,n){function e(t,n){if(t.classList)t.classList.remove(n);else{var e=new RegExp("(^|\\b)"+n.split(" ").join("|")+"(\\b|$)","gi");t.className=t.className.replace(e," ")}}t.exports=e},,,function(t,n){"use strict";function e(){var t=document.querySelector("#page-nav");if(t&&!document.querySelector("#page-nav .extend.prev")&&(t.innerHTML='<a class="extend prev disabled" rel="prev">&laquo; Prev</a>'+t.innerHTML),t&&!document.querySelector("#page-nav .extend.next")&&(t.innerHTML=t.innerHTML+'<a class="extend next disabled" rel="next">Next &raquo;</a>'),yiliaConfig&&yiliaConfig.open_in_new){var n=document.querySelectorAll(".article-entry a:not(.article-more-a)");n.forEach(function(t){t.setAttribute("target","_blank")})}var e=document.querySelector("#js-aboutme");e&&0!==e.length&&(e.innerHTML=e.innerText)}t.exports={init:e}},,,,,,,,,function(t,n){function e(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var e=t.nextSibling;return e?t.parentNode.insertBefore(n,e):t.parentNode.appendChild(n)}t.exports=e}])</script><script src="/./main.2d7529.js"></script><script>!function(){var e=function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)};e("/slider.885efe.js")}()</script>
+
+
+<div id="totop" style="position:fixed;bottom:50px;right:72px;cursor: pointer;width:40px;height:63px;background-image:url('/img/scrollup.png');background-position: -5px -67px;background-repeat:no-repeat;">
+<a title="返回顶部"></a>
+</div>
+<script src="/js/jquery-3.1.1.js"></script>
+<script src="/js/totop.js"></script>
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-nav header-menu">
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+
+    <ul style="width: 70%">
+    
+    
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      
+        
+    </ul>
+  </div>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Emmet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">工具篇</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">移动端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">响应式布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">浏览器工具</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://isfeiben.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>好友[飞奔]</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">爱前端&lt;br&gt;&lt;br&gt;收集一切感觉酷酷的东西&lt;br&gt;说不定哪天就用上了呢?o(*￣︶￣*)o</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

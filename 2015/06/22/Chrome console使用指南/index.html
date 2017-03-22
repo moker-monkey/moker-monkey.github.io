@@ -6,17 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: CSS | Moker的个人空间</title>
+  <title>Chrome 控制台使用指南 | Moker的个人空间</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎来到Moker的个人博客,本人是一个前端开发者,时常会在博客中发表文章,以及收集一些炫酷特效,欢迎大家收藏。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Moker的个人空间">
-<meta property="og:url" content="http://yoursite.com/tags/CSS/index.html">
+  <meta name="description" content="Chrome 控制台使用指南前言​    Chrome浏览器我想是每一个前端必用工具之一吧，一部分原因是它速度快，体积不大，支持的新特性也比其它浏览器多，还有一部分我想就是因为它的控制台功能强大了吧，说它是神器一点也不过分，很方便。但其实很多开发者并没有用出控制台的精髓，只是使用简单的console.log();其实控制台功能远远不止这么简单哦。
+console.clearconsole.clea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chrome 控制台使用指南">
+<meta property="og:url" content="http://yoursite.com/2015/06/22/Chrome console使用指南/index.html">
 <meta property="og:site_name" content="Moker的个人空间">
-<meta property="og:description" content="欢迎来到Moker的个人博客,本人是一个前端开发者,时常会在博客中发表文章,以及收集一些炫酷特效,欢迎大家收藏。">
+<meta property="og:description" content="Chrome 控制台使用指南前言​    Chrome浏览器我想是每一个前端必用工具之一吧，一部分原因是它速度快，体积不大，支持的新特性也比其它浏览器多，还有一部分我想就是因为它的控制台功能强大了吧，说它是神器一点也不过分，很方便。但其实很多开发者并没有用出控制台的精髓，只是使用简单的console.log();其实控制台功能远远不止这么简单哦。
+console.clearconsole.clea">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-4fbdc683ddd17a60.png!web?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-5d0605775e2d00ba?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-5c2a435b5903dd0d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-452d390fe2f170b9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-1ae49958ebd03924?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2896818-7385153b4b5f8477.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-5eeca9732c7b9bd4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-0fe4648c513d2b2d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-d94a346c578f119f?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-4f80e2fa12dde1f2?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1394123-13c0922ac07db2bf?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-22T11:19:49.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Moker的个人空间">
-<meta name="twitter:description" content="欢迎来到Moker的个人博客,本人是一个前端开发者,时常会在博客中发表文章,以及收集一些炫酷特效,欢迎大家收藏。">
+<meta name="twitter:title" content="Chrome 控制台使用指南">
+<meta name="twitter:description" content="Chrome 控制台使用指南前言​    Chrome浏览器我想是每一个前端必用工具之一吧，一部分原因是它速度快，体积不大，支持的新特性也比其它浏览器多，还有一部分我想就是因为它的控制台功能强大了吧，说它是神器一点也不过分，很方便。但其实很多开发者并没有用出控制台的精髓，只是使用简单的console.log();其实控制台功能远远不止这么简单哦。
+console.clearconsole.clea">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1394123-4fbdc683ddd17a60.png!web?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
   
     <link rel="icon" href="/img/logo.png">
@@ -156,177 +172,217 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Chrome console使用指南" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Chrome 控制台使用指南
+    </h1>
+  
+
+        
+        <a href="/2015/06/22/Chrome console使用指南/" class="archive-article-date">
+  	<time datetime="2015-06-22T07:08:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-22</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Chrome-控制台使用指南"><a href="#Chrome-控制台使用指南" class="headerlink" title="Chrome 控制台使用指南"></a>Chrome 控制台使用指南</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    Chrome浏览器我想是每一个前端必用工具之一吧，一部分原因是它速度快，体积不大，支持的新特性也比其它浏览器多，还有一部分我想就是因为它的控制台功能强大了吧，说它是神器一点也不过分，很方便。但其实很多开发者并没有用出控制台的精髓，只是使用简单的console.log();其实控制台功能远远不止这么简单哦。</p>
+<h2 id="console-clear"><a href="#console-clear" class="headerlink" title="console.clear"></a>console.clear</h2><p>console.clear();清空控制台</p>
+<h2 id="console-log家族"><a href="#console-log家族" class="headerlink" title="console.log家族"></a>console.log家族</h2><p>先简单介绍一下chrome的控制台，打开chrome浏览器，按f12就可以轻松的打开控制台</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-4fbdc683ddd17a60.png!web?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<a id="more"></a> 
+<p>我们主要看看console.log的几个兄弟：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1.console.log (&apos;普通信息&apos;)</div><div class="line"></div><div class="line">2.console.info (&apos;提示性信息&apos;)</div><div class="line"></div><div class="line">3.console.error (&apos;错误信息&apos;)</div><div class="line"></div><div class="line">4.console.warn (&apos;警示信息&apos;)</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-5d0605775e2d00ba?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>​                                        控制台</p>
+<p><strong>大家都会用log，但很少有人能够很好地利用console.error，console.warn 等将输出到控制台的信息进行分类整理。他们功能区别不大，意义在于将输出到控制台的信息进行归类，或者说让它们更语义化。</strong></p>
+<p>如果再配合console.group 与console.groupEnd，可以将这种分类管理的思想发挥到极致。这适合于在开发一个规模很大模块很多很复杂的Web APP时，将各自的log信息分组到以各自命名空间为名称的组里面。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">console.group(&quot;app.bundle&quot;);</div><div class="line">console.warn(&quot;来自bundle模块的警告信息1&quot;);console.warn(&quot;来自bundle模块的警告信息2&quot;);</div><div class="line">console.groupEnd();</div><div class="line"></div><div class="line">console.group(&quot;app.bundle&quot;);</div><div class="line">console.log(&quot;来自bundle模块的信息1&quot;);console.log(&quot;来自bundle模块的信息2&quot;);</div><div class="line">console.groupEnd();</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-5c2a435b5903dd0d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p><strong>这样的控制台信息看上去就一目了然了，就不用再为了找这是属于那一行代码输出的再翻一遍源码了。</strong></p>
+<p>另外，console.log家族还给我们提供了一个的API：第一个参数可以带一些格式化指令，比如<code>%c,\n</code>;看下面这个炫酷的效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(&apos;%chello world&apos;, &apos;background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;font-size:5em;&apos;);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-452d390fe2f170b9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p>另外，console.log() 接收不定参数，参数间用逗号分隔，最终会输出会将它们以空白字符连接。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-1ae49958ebd03924?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<h2 id="table-data-columns"><a href="#table-data-columns" class="headerlink" title="table(data[, columns])"></a>table(data[, columns])</h2><p>将对象数据以表格形式显示，columns为可选的列标题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var names =&#123;</div><div class="line">   0:&#123;firsName:&quot;John&quot;,LastName:&quot;Smith&quot;&#125;</div><div class="line">   1:&#123;firsName:&quot;Jane&quot;,LastName:&quot;Doe&quot;&#125;</div><div class="line">&#125;;</div><div class="line">console.table(data.content);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/2896818-7385153b4b5f8477.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p><strong>有的时候后端传回来一大串数据，是不是觉得直接console.log或是通过抓包工具查看都会让人晕头转向呢，这个时候正事console.table发挥作用的时候了，以表格的形式呈现数据，自然一目了然。</strong></p>
+<h2 id="console-assert"><a href="#console-assert" class="headerlink" title="console.assert"></a>console.assert</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var isDebug=false;</div><div class="line">console.assert(isDebug,&apos;开发中的log信息。。。&apos;);</div></pre></td></tr></table></figure>
+<p>当你想代码满足某些条件时才输出信息到控制台，那么你大可不必写if或者三元表达式来达到目的，cosole.assert便是这样场景下一种很好的工具，它会先对传入的表达式进行断言，只有表达式为假时才输出相应信息到控制台。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-5eeca9732c7b9bd4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<h2 id="console-count"><a href="#console-count" class="headerlink" title="console.count"></a>console.count</h2><p>除了条件输出的场景，还有常见的场景是计数。</p>
+<p>当你想统计某段代码执行了多少次时也大可不必自己去写相关逻辑，内置的console.count可以很地胜任这样的任务.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-0fe4648c513d2b2d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<h2 id=""><a href="#" class="headerlink" title="$"></a>$</h2><p>上面的<code>$_</code>需要领悟其奥义才能使用得当，而<code>$0~$4</code>则代表了最近5个你选择过的DOM节点。</p>
+<p>什么意思呢？在页面右击选择审查元素，然后在弹出来的DOM结点树上面随便点选，这些被点过的节点会被记录下来，而<code>$0</code>会返回最近一次点选的DOM结点，以此类推，<code>$1</code>返回的是上上次点选的DOM节点，最多保存了5个，如果不够5个，则返回undefined。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-d94a346c578f119f?imageMogr2/auto-orient/strip" alt="img"></p>
+<p>另外值得一赞的是，Chrome 控制台中原生支持类jQuery的选择器，也就是说你可以用$加上熟悉的css选择器来选择DOM节点，多么滴熟悉。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(&apos;body&apos;);</div><div class="line">$$(&apos;div&apos;);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-4f80e2fa12dde1f2?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<h2 id="x-path"><a href="#x-path" class="headerlink" title="$x(path)"></a>$x(path)</h2><p>将所匹配的节点放在一个数组里返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$x(&quot;//p&quot;);</div><div class="line">$x(&quot;//p[a]&quot;);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1394123-13c0922ac07db2bf?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="img"></p>
+<p><code>$x(&quot;//p&quot;)</code>匹配所有的p节点，<code>$x(&quot;//p[a]&quot;);</code>匹配所有子节点包含a的p节点</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>欢迎打赏,求硬币,求香蕉,求游艇,火箭!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinzhifu.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/28/CSS&CSS3常用样式小结/" class="archive-article-date">
-  	<time datetime="2015-08-28T12:00:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/28/CSS&CSS3常用样式小结/">CSS/CSS3常用样式小结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小结</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">浏览器工具</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
+        			<a href="/categories/工具篇/" class="article-tag-list-link color4">工具篇</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2015/06/22/Chrome console使用指南/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/05/29/CSS3动画/" class="archive-article-date">
-  	<time datetime="2015-05-29T04:25:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-05-29</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/05/29/CSS3动画/">CSS3动画</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">动画</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/05/20/CSS3简介/" class="archive-article-date">
-  	<time datetime="2015-05-20T06:03:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-05-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/05/20/CSS3简介/">CSS3简介</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+    <a href="/2015/08/28/CSS&CSS3常用样式小结/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS/CSS3常用样式小结
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2015/06/20/Emmet/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Emmet指令指南</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -346,9 +402,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
